@@ -29,3 +29,4 @@ public class MenuItem {
         isNew = aNew;
     }
 }
+
