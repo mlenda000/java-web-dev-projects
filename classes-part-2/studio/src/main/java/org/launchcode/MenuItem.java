@@ -1,5 +1,7 @@
 package org.launchcode;
 
+import java.lang.reflect.Array;
+
 public class MenuItem {
     private double price;
     private String description;
