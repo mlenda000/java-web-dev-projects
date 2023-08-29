@@ -28,25 +28,4 @@ public class MenuItem {
     public void setNew(boolean aNew) {
         isNew = aNew;
     }
-
-    public double getPrice() {
-        return price;
-    }
-    public String getDescription(){
-        return description;
-    }
-    public String getCategory() {
-        return category;
-    }
-
-    @Override
-    public String toString() {
-        return "MenuItem{" +
-                "price=" + price +
-                ", description='" + description + '\'' +
-                ", category='" + category + '\'' +
-                ", isNew=" + isNew +
-                '}';
-    }
 }
-

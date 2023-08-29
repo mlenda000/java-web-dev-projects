@@ -27,4 +27,31 @@ public class Menu {
     public ArrayList<MenuItem> getItems() {
         return items;
     }
+
+    @Override
+    public String toString() {
+        return "Menu{" +
+                "lastUpdated=" + lastUpdated +
+                ", items=" + items +
+                '}';
+    }
+    public static void fullMenu(ArrayList<MenuItem> plate) {
+        for (MenuItem item : plate) {
+            System.out.println(item.getCategory() + ": $" + item.getPrice() + " " + item.getDescription());
+        }
+    }
+    public static void singleMenuItem(String d, ArrayList<MenuItem> plate){
+        for (MenuItem item : plate){
+            if (item.getDescription().toLowerCase().contains(d.toLowerCase())){
+                System.out.println("\nIs this what you were looking for?");
+                System.out.println(item.getCategory() + ": $" + item.getPrice() + " " + item.getDescription());
+            }
+        }
+    }
+    public static void removeItem(String d, ArrayList<MenuItem> plate){
+        plate.removeIf(item -> item.getDescription().toLowerCase().contains(d.toLowerCase()));
+        System.out.println("\nUpdated Lunch Menu:");
+        Menu.fullMenu(plate);
+    }
 }
+
