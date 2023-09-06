@@ -18,6 +18,7 @@ private final String answer;
     public String getanswer() {
         return this.answer;
     }
+
     public abstract boolean answerCheck(String answer);
 
 
