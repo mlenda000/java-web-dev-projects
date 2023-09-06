@@ -21,5 +21,4 @@ private final String answer;
 
     public abstract boolean answerCheck(String answer);
 
-
 }
