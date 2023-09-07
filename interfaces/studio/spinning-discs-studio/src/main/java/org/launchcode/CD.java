@@ -18,10 +18,6 @@ public class CD extends BaseDisc implements OpticalDisc{
 
     }
 
-    @Override
-    public void spinDisc() {
-        System.out.println("A CD spins at a rate of " +minSpin +" - " +maxSpin+ "rpm.");;
-    }
 
     public void storeData(){
         System.out.println("The CD stores data.");
@@ -31,10 +27,15 @@ public class CD extends BaseDisc implements OpticalDisc{
         System.out.println("The CD can have data written to it.");
     }
 
-    public void readData(){
-        System.out.println("The CD can read data.");
+    @Override
+    public void spinDisc() {
+        System.out.println("A CD spins at a rate of " +minSpin +" - " +maxSpin+ "rpm.");;
     }
 
+    @Override
+    public void readData() {
+        System.out.println("The CD can read data.");
+    }
 
     public String getName() {
         return name;

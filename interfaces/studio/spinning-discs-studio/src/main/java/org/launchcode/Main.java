@@ -8,18 +8,18 @@ public class Main {
             BaseDisc dvd = new DVD("Jurassic Park", "movie");
         // TODO: Call each CD and DVD method to verify that they work as expected.
 
-        cd.spinDisc();
+        ((CD) cd).spinDisc();
         cd.storeData();
         cd.writeData();
-        cd.readData();
+        ((CD) cd).readData();
 
 
-        dvd.spinDisc();
+        ((DVD) dvd).spinDisc();
         dvd.storeData();
         dvd.writeData();
-        dvd.readData();
+        ((DVD) dvd).spinDisc();
 
-        System.out.println(OpticalDisc.destroyMicrowave());
+        System.out.println(((DVD) dvd).destroyMicrowave());
 
 
     }

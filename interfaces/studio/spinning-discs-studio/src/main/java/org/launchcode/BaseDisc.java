@@ -26,8 +26,8 @@ public abstract class BaseDisc {
         this.contents = contents;
     }
 
-    public void spinDisc(){
-    }
+//    public void spinDisc(){
+//    }
 
     public void writeData(){
 
@@ -36,7 +36,7 @@ public abstract class BaseDisc {
     public void storeData(){
 
     };
-    public void readData(){}
+//    public void readData(){}
 
 
 
